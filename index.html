@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quà 8/3 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating Hearts -->
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <!-- Lock Screen -->
+  <section class="lock-screen" id="lockScreen">
+    <div class="lock-card">
+      <div class="lock-icon">🔐</div>
+      <h1>Món quà nhỏ dành cho em</h1>
+      <p>Nhập mật khẩu để mở nha 💌</p>
+
+      <div class="password-box">
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Nhập mật khẩu..."
+          autocomplete="off"
+        />
+        <button id="unlockBtn">Mở quà</button>
+      </div>
+
+      <p class="hint">Gợi ý: ngày đặc biệt / 0803 / tên thân mật...</p>
+      <p class="error-message" id="errorMessage"></p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="main-content hidden" id="mainContent">
+    <header class="hero">
+      <div class="hero-card">
+        <p class="hero-subtitle">Happy Women's Day</p>
+        <h1>Chào mừng em đến với món quà 8/3 💖</h1>
+        <p class="hero-desc">
+          Anh có chuẩn bị vài điều nho nhỏ cho em ở đây.
+          Bấm từng ô để mở nhé ✨
+        </p>
+      </div>
+    </header>
+
+    <section class="menu-grid">
+      <button class="menu-card" data-type="music">
+        <span class="emoji">🎵</span>
+        <span class="title">Music</span>
+        <span class="desc">Playlist dành cho em</span>
+      </button>
+
+      <button class="menu-card" data-type="letter">
+        <span class="emoji">💌</span>
+        <span class="title">Letter</span>
+        <span class="desc">Một lá thư nhỏ</span>
+      </button>
+
+      <button class="menu-card" data-type="image">
+        <span class="emoji">🖼️</span>
+        <span class="title">Image</span>
+        <span class="desc">Album kỷ niệm</span>
+      </button>
+
+      <button class="menu-card" data-type="gift">
+        <span class="emoji">🎁</span>
+        <span class="title">Gift</span>
+        <span class="desc">Món quà bí mật</span>
+      </button>
+    </section>
+
+    <footer class="footer-note">
+      Làm bằng cả chút code và nhiều chút thương 💞
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <div class="modal-box">
+      <button class="close-btn" id="closeModalBtn" aria-label="Đóng">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
